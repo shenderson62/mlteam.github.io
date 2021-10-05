@@ -1,6 +1,6 @@
 
 # Project Proposal
-Proposal here!
+
 ### Introduction/Background
 Skin cancer is becoming exponentially prevalent in the United States. Due to the increasing risk of skin cancer, it is important to be able to diagnose malignant cancers before it reaches stages that are difficult to treat.
 Often times, skin cancer can be diagnosed looking at the ABC’s (Whited & Grichnik, 2019):  
@@ -26,3 +26,6 @@ From our machine learning methods, we are expecting our algorithm to correctly a
 
 ### Timeline
 ![timeline](/assets/timeline.png)
+
+### Responsibilities
+![responsibilities](/assets/responsibilities.PNG)
