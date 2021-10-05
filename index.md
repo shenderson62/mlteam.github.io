@@ -22,6 +22,7 @@ From our machine learning methods, we are expecting our algorithm to correctly a
 * Mader, K. S. (2018, September 20). Skin cancer Mnist: Ham10000. Kaggle. Retrieved October 5, 2021, from https://www.kaggle.com/kmader/skin-cancer-mnist-ham10000. 
  * Nugroho, A. A., Slamet, I., & Sugiyanto. (2019). Skins cancer identification system of HAMl0000 skin cancer dataset using convolutional neural network. AIP Conference Proceedings, 2202(1). https://doi.org/10.1063/1.5141652
 * Retrieved from: Mountainside Medical Center: Skin Cancer and melanoma faqs. TAPinto. (n.d.). Retrieved October 5, 2021, from https://www.tapinto.net/towns/montclair/sections/health-and-wellness/articles/mountainside-medical-center-skin-cancer-and-melanoma-faqs. 
+* Whited, J. D., & Grichnik, J. M. (1998, March 4). Does This Patient Have a Mole or a Melanoma? Retrieved from https://jamanetwork.com/journals/jama/fullarticle/187305. 
 
 ### Timeline
 ![timeline](/assets/timeline.png)
