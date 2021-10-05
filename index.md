@@ -17,4 +17,3 @@ Proposal here
 
 ### Timeline
 
-theme: jekyll-theme-hacker
