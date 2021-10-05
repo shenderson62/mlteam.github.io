@@ -24,3 +24,4 @@ From our machine learning methods, we are expecting our algorithm to correctly a
 * Retrieved from: Mountainside Medical Center: Skin Cancer and melanoma faqs. TAPinto. (n.d.). Retrieved October 5, 2021, from https://www.tapinto.net/towns/montclair/sections/health-and-wellness/articles/mountainside-medical-center-skin-cancer-and-melanoma-faqs. 
 
 ### Timeline
+![timeline](/assets/timeline.png)
