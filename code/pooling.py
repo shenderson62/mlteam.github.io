@@ -10,13 +10,9 @@ class Pooling(object):
 #image = image.reshape(1, 4, 4, 1)
     def perform_pooling(image):
 
- 
         # define model containing just a single max pooling layer
-        model = Sequential([MaxPooling2D(pool_size = 2, strides = 2)])
- 
-        # generate pooled output
-        output = model.predict(image)
-        return output
+        pool = MaxPooling2D(pool_size = 2, strides = 2)
+        return pool
  
 # # print output image
 # output = np.squeeze(output)
