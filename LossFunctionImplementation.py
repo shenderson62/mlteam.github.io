@@ -1,6 +1,7 @@
 from math import log
 import tensorflow_estimator as tf
 from keras.models import Sequential
+from keras.layers import Conv2D
 class LossFunctionImplementation:
     """
     Actual implementation of loss_cross_entropy.
@@ -20,6 +21,6 @@ class LossFunctionImplementation:
     def lossAndOutput(model) :
         loss = 'binary_crossentropy'
         model.compile(loss=loss, optimizer=tf.keras.optimizers.Adam(lr=0.001), metrics=['accuracy'])
-        model.add(Dense(1, activation='sigmoid'))
+        model.add(Conv2D(1, activation='sigmoid'))
 
 )
