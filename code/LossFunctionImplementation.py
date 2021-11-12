@@ -1,7 +1,7 @@
 from math import log
-import tensorflow_estimator as tf
-from keras.models import Sequential
-from keras.layers import Conv2D
+import tensorflow as tf
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D
 class LossFunctionImplementation:
     """
     Actual implementation of loss_cross_entropy.
