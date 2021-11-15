@@ -33,6 +33,7 @@ Although this visual classification task could be difficult since the pictures o
 * Tschandl, Philipp, 2018, "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions", https://doi.org/10.7910/DVN/DBW86T, Harvard Dataverse, V3, UNF:6:/APKSsDGVDhwPBWzsStU5A== [fileUNF]
 * S. Albawi, T. A. Mohammed and S. Al-Zawi, "Understanding of a convolutional neural network," 2017 International Conference on Engineering and Technology (ICET), 2017, pp. 1-6, doi: 10.1109/ICEngTechnol.2017.8308186.
 * Whited, J. D., & Grichnik, J. M. (1998, March 4). Does This Patient Have a Mole or a Melanoma? Retrieved from https://jamanetwork.com/journals/jama/fullarticle/187305. 
+* Convolutional Neural Network (CNN) &nbsp;: &nbsp; Tensorflow Core. TensorFlow. (n.d.). Retrieved November 15, 2021, from https://www.tensorflow.org/tutorials/images/cnn. 
 
 ## Timeline
 ![timeline](/assets/timeline.png)
