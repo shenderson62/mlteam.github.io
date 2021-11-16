@@ -28,6 +28,8 @@ The resulting predictor will show the effectiveness of using CNNs for this class
 ## Discussion
 Although this visual classification task could be difficult since the pictures of skin lesions are naturally fine-grained, CNNs are very well suited for visual analysis so we don't expect to encounter too much difficulty in creating a relatively accurate predictor. It is possible for certain classifications of skin lesions to be more easily identified, which could limit accuracy. This would be handled by changing the architecture or manipulating specific hyperparameters. Additionally, CNNs can run into overfitting if the dataset is not large enough. However, since this dataset is one of the largest of its type by far, it is unlikely that this will be a problem (Tschandl et al., 2018).
 
+After our 
+
 When configuring our model, we chose categorical cross entropy as our loss function, since we have more than two categories within our classification problem. Categorical cross entropy uses one-hot encoding so that only the element within a vector corresponding to the correct class is 1, where the remaining elements would be zero (Biswas, 2021). We used Adam as our optimizer, which is a type of stochastic gradient descent, with a learning rate of .0005. Using a loss function helped us understand the difference between the predicted and actual probability distributions with regards to how our model classified the images of skin lesions.
 
 ## References
