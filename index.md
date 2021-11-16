@@ -1,5 +1,5 @@
 
-# Project Proposal
+# Project Midterm Report
 
 ## Introduction/Background
 Skin cancer is becoming exponentially prevalent in the United States. Due to the increasing risk of skin cancer, it is important to be able to diagnose malignant cancers before it reaches stages that are difficult to treat. Often times, skin cancer can be diagnosed looking at various traits of the skin lesion, such as the ABC’s (Whited & Grichnik, 2019):  
@@ -22,7 +22,7 @@ The images in HAM10000 have already been screened, filtered, and corrected so th
 ### Convolutional Neural Network
 To create a predictor using this data, we will create and train a Convolutional Neural Network to classify the skin lesions. CNNs are a class of neural networks with features such as shared weights or pooling that make it extremely suitable for analyzing visual data, which it is often used for (Albawi et al., 2017). The CNN will be trained on the entire HAM10000 dataset, using only the images and their categorizations as inputs. It will be tested on its performance of sorting pictures of skin lesions into their correct classifications.
 
-## Potential Results
+## Results
 The resulting predictor will show the effectiveness of using CNNs for this classification task. We will seek to improve this effectiveness by changing the network's architecture through experimenting with the number and order of layers to find the setup that results in the most accurate CNN for classifying these skin lesions.
 
 ## Discussion
