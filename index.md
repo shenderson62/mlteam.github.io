@@ -36,8 +36,11 @@ To measure our predictive model performance, we used accuracy as one of our metr
 
 ![LossVisual](/assets/LossVisual.PNG)
 
+As we see in the graph, our training and validation loss both decrease to a stable value, demonstrating a successful learning curve (Brownlee, 2019).
+
 ## References
 * Biswas, P. (2021, June 30). Importance of Loss Functions in Deep Learning and Python Implementation. Medium. Retrieved November 16, 2021, from https://towardsdatascience.com/importance-of-loss-functions-in-deep-learning-and-python-implementation-4307bfa92810. 
+* Brownlee, J. (2019, August 6). How to use learning curves to diagnose machine learning model performance. Machine Learning Mastery. Retrieved November 17, 2021, from https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/. 
 * Tschandl, P., Rosendahl, C. & Kittler, H. The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions. Sci Data 5, 180161 (2018). https://doi.org/10.1038/sdata.2018.161
 * Tschandl, Philipp, 2018, "The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions", https://doi.org/10.7910/DVN/DBW86T, Harvard Dataverse, V3, UNF:6:/APKSsDGVDhwPBWzsStU5A== [fileUNF]
 * S. Albawi, T. A. Mohammed and S. Al-Zawi, "Understanding of a convolutional neural network," 2017 International Conference on Engineering and Technology (ICET), 2017, pp. 1-6, doi: 10.1109/ICEngTechnol.2017.8308186.
