@@ -17,6 +17,7 @@ To help counterract this growth in skin cancer rates, we aim to use machine lear
 The skin cancer data used consists of the HAM10000 (“Human Against Machine with 10000 training images”) dataset, a collection of 10,015 dermatoscopic images categorized into seven different skin lesion classifications (Tschandl, 2018).
 
 ### Data Cleaning
+Where we received our data: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 The images in HAM10000 have already been screened, filtered, and corrected so that the images present are all very high quality and clearly depict the skin lesions in question. Furthermore they are all clearly labeled with the distinct classifications they belong to with no ambiguous classifications present (Tschandl et al., 2018). We split our data into training and testing (validation) sets. 10% of our data is reserved for testing and 90% is for training.
 
 ### Convolutional Neural Network
