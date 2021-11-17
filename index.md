@@ -24,11 +24,10 @@ The images in HAM10000 have already been screened, filtered, and corrected so th
 ### Convolutional Neural Network
 To create a predictor using this data, we will create and train a Convolutional Neural Network to classify the skin lesions. CNNs are a class of neural networks with features such as shared weights or pooling that make it extremely suitable for analyzing visual data, which it is often used for (Albawi et al., 2017). The CNN will be trained on the entire HAM10000 dataset, using only the images and their categorizations as inputs. It will be tested on its performance of sorting pictures of skin lesions into their correct classifications.
 
-## Results
-The resulting predictor will show the effectiveness of using CNNs for this classification task. We saught to improve this effectiveness by changing the network's architecture through experimenting with the number and order of layers to find the setup that results in the most accurate CNN for classifying these skin lesions.
-
 ## Discussion
 Although this visual classification task could be difficult since the pictures of skin lesions are naturally fine-grained, CNNs are very well suited for visual analysis so we don't expect to encounter too much difficulty in creating a relatively accurate predictor. It is possible for certain classifications of skin lesions to be more easily identified, which could limit accuracy. This would be handled by changing the architecture or manipulating specific hyperparameters. Additionally, CNNs can run into overfitting if the dataset is not large enough. However, since this dataset is one of the largest of its type by far, it is unlikely that this will be a problem (Tschandl et al., 2018).
+
+Next, convolution operation may impose a certain degree of linearity onto an image. However, images may contain many non-linear aspects, such as gradient transitions between colors, borders, transitions between pixels, etc. In order to account for this, we apply a rectifier function to further increase the non-linearity of our images. In our model, we chose to use a Rectified Linear Unit (RELU) activation function that maintains only postive values in the image. After rectification, one could examine an image and notice that colors change more abruptly, indicating some linearity has been disposed of. 
 
 One thing CNNs have a hard time accounting for is different locations of a feature in an image because it looks to match one precise shape to another precise shape. To account for this, we included a max pooling layer. This pooling function downsamples our images, creating a lower resolution of our images, and therefore retains the large structural elements of our feature without getting hindered by the fine details. Our max pooling function specifically classifies where the most prominent feature in the image is, which helps us account for small variations in feature location. We did this by creating a 2x2 filter with a stride of 2 that would reduce each row and column by half, therefore reducing resolution, while still retaining the major features of the image. 
 
@@ -39,6 +38,9 @@ To measure our predictive model performance, we used accuracy as one of our metr
 ![LossVisual](/assets/LossVisual.PNG)
 
 As we see in the graph, our training and validation loss both decrease to a stable value, demonstrating a successful learning curve (Brownlee, 2019).
+
+## Results
+The resulting predictor will show the effectiveness of using CNNs for this classification task. We sought to improve this effectiveness by changing the network's architecture through experimenting with the number and order of layers to find the setup that results in the most accurate CNN for classifying these skin lesions. For our final report, we will either aim to try a different learning method and compare our results or utilize a deep architecture in place of a classic learning method.
 
 ## References
 * Biswas, P. (2021, June 30). Importance of Loss Functions in Deep Learning and Python Implementation. Medium. Retrieved November 16, 2021, from https://towardsdatascience.com/importance-of-loss-functions-in-deep-learning-and-python-implementation-4307bfa92810. 
