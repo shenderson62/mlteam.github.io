@@ -34,6 +34,8 @@ When configuring our model, we chose categorical cross entropy as our loss funct
 
 To measure our predictive model performance, we used accuracy as one of our metrics.
 
+![LossVisual](/assets/LossVisual.PNG)
+
 ## References
 * Biswas, P. (2021, June 30). Importance of Loss Functions in Deep Learning and Python Implementation. Medium. Retrieved November 16, 2021, from https://towardsdatascience.com/importance-of-loss-functions-in-deep-learning-and-python-implementation-4307bfa92810. 
 * Tschandl, P., Rosendahl, C. & Kittler, H. The HAM10000 dataset, a large collection of multi-source dermatoscopic images of common pigmented skin lesions. Sci Data 5, 180161 (2018). https://doi.org/10.1038/sdata.2018.161
