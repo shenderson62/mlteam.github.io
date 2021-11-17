@@ -38,10 +38,9 @@ One thing CNNs have a hard time accounting for is different locations of a featu
 
 When configuring our model, we chose categorical cross entropy as our loss function, since we have multiple categories within our classification problem. Categorical cross entropy uses one-hot encoding so that only the element within a vector corresponding to the correct class is 1, where the remaining elements would be zero (Biswas, 2021). This loss function was also modified through the weighing of the categories discussed earlier, to ensure that the categories with less data were still represented in their influence upon the model's learning.
 
-Lastly the model is finished off with a fully connected layer, a layer of neurons that connect to every neuron in the previous layer and use the softmax activation to predict which category of skin lesions an image belongs to.
+Lastly the model is finished off with a fully connected layer, a layer of neurons that connect to every neuron in the previous flattened layer, which is just the data resulting from the convolutional and pooling layers converted into a one-dimensional vector, and use the softmax activation to predict which category of skin lesions an image belongs to.
 
 We used Adam as our optimizer, which is a type of stochastic gradient descent, with a learning rate of .0001. Using a loss function helped us understand the difference between the predicted and actual probability distributions with regards to how our model classified the images of skin lesions.
-
 
 ## Results and Discussion
 To measure our predictive model performance, we used its accuracy and loss as our metrics.
