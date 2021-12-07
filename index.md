@@ -1,5 +1,5 @@
 
-# Project Midterm Report
+# Project Final Report
 
 ## Introduction/Background
 Skin cancer is becoming exponentially prevalent in the United States. Due to the increasing risk of skin cancer, it is important to be able to diagnose malignant cancers before it reaches stages that are difficult to treat. Often times, skin cancer can be diagnosed looking at various traits of the skin lesion, such as the ABC’s (Whited & Grichnik, 2019):  
