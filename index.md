@@ -45,19 +45,20 @@ We used Adam as our optimizer, which is a type of stochastic gradient descent, w
 ## Results and Discussion
 To measure our predictive model performance, we used its accuracy and loss as our metrics.
 
-![LossVisual](/assets/LossVisual.PNG)
+Among the ways of improvement discussed previously, we greatly increased the depth of the model through numerous more convolutional and pooling models, implemented Batch Normalization and early stopping to help with overfitting, and experimented with tuning the model's hyperparameters to increase our maximum achieved accuracy from around 65% to 83.38%.
 
-These graphs shows the model's accuracy and loss over 100 training epochs. 
-In the accuracy graph, you can see that the validation accuracy ceases to grow meaningfully after around the 30th epoch, whereas the training accuracy continues to grow all the way to the 100th epoch. This suggests that the model is overfitting and corresponding too closely to the training data and 30 epochs is all we need for it to converge its maximum accuracy in classifying skin lesions, which is around 65% or so.
-In the loss graph, the training loss occurs as expected, exponentially decreasing in value with each epoch. On the other hand, although the loss function initally decreases as well like expected, it then begins to increase linearly, even passing the training loss at one point. Similarly, this also suggests that the model is overfitting the training data (Brownlee, 2019).
+However, this model also had a loss of around 0.77. As can be seen in the confusion matrix, this is because it consistently predicts skin lesions to be in the NV category, causing the large loss whenever the image actually falls in another category.
 
-Thus while the model does show some effectiveness at predicting the skin lesion category given an image, being accurate around 65% of the time, which is clearly better than the the random chance of around 14%, there is still room for improvement. In addition, the model shows signs of overfitting, which we could also work to prevent.
+![ConfusionMatrix](/assets/Matrix83.jpg)
 
-To handle overfitting, we can increase the amount of dropout applied or add more layers to decrease the interdependent learning between neurons. We can also stop the model early, which given our graphs is clearly around the 20-30 epoch, where the overfitting begins to occur.
+Thus, while the changes in the class weights helped in the problem of the unbalanced data, as an accuracy of 83% is higher than the model would have gotten just guessing NV every time at around 67%, they weren't enough. We attempted more fixes by oversampling the images with fewer categories, and managed to decrease the loss to around 0.6052. This slight improvement can be observed in the corresponding confusion matrix, where images in other categories would be more likely to be predicted, when the model wasn't guessing NV, that is.
 
-To increase the accuracy of our CNN there are many changes we can try. For one, we could increase the depth of our model so that they can recognize more complex structures within the images. We could also use implement cross-validation, so that the model will eventually be trained over the entire dataset rather that a divided section of it. Furthermore, we could just simply experiment with modifying the model's hyperparameters such as epochs, batch size, learning rate, and numerous other variables.
+![ConfusionMatrix](/assets/Matrix60.jpg)
 
-For the final report, we will seek to test and implement these modifications to our model to increase its performance and fitting so that the model can be improved to a point where it is actually useful for the task of categorizing skin lesions.
+## Conclusion
+
+The final iteration of the model is an alright predictor of skin lesions as an accuracy of 83% will manage to correctly categorize a given skin lesion quite often. However, the model isn't perfect, with overpredictions of the largest category still hindering its performance. Given the severity of the task at hand, trying to evaluate skin lesions for the sake of cancer diagnosis, where people's lives are at stake, this model's performance is too poor to be used in these situations and is not yet fit for real-world applications.
+
 
 ## References
 * Biswas, P. (2021, June 30). Importance of Loss Functions in Deep Learning and Python Implementation. Medium. Retrieved November 16, 2021, from https://towardsdatascience.com/importance-of-loss-functions-in-deep-learning-and-python-implementation-4307bfa92810. 
