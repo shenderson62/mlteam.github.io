@@ -59,6 +59,9 @@ To increase the accuracy of our CNN there are many changes we can try. For one, 
 
 For the final report, we will seek to test and implement these modifications to our model to increase its performance and fitting so that the model can be improved to a point where it is actually useful for the task of categorizing skin lesions.
 
+## Conclusion
+The model is an decent predictor of skin lesions as an accuracy of 83% correctly categorizes skin lesions quite often. However, the model isn't perfect, and it still overpredicts the NV category. Since the task concerns skin cancer diagnoses where people's lives are at stake, this model's performance doesn’t meet the incredibly high standards necessary and is not yet fit for real-world applications.
+
 ## References
 * Biswas, P. (2021, June 30). Importance of Loss Functions in Deep Learning and Python Implementation. Medium. Retrieved November 16, 2021, from https://towardsdatascience.com/importance-of-loss-functions-in-deep-learning-and-python-implementation-4307bfa92810. 
 * Brownlee, J. (2019, August 6). How to use learning curves to diagnose machine learning model performance. Machine Learning Mastery. Retrieved November 17, 2021, from https://machinelearningmastery.com/learning-curves-for-diagnosing-machine-learning-model-performance/. 
